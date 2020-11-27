@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Week 7 Project</title>
+
+	<!-- css -->
+	<!-- 字型 -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<!-- animate.css -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!-- 專案css -->
+	<link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+	<!-- header:main_img主視覺+聯絡 -->
+	<header style="background-image:url(img/main_img_1920.png);">
+		<div data-aos="fade-up">
+			<p>Here’s</p>
+			<h1>JOANNE</h1>			
+			<h3>Founder of “XXXD Official’’<br> & Graphic Designer</h3>
+			<ul>
+				<a href=""><img src="img/icon_be_64.svg" alt="be"></a>
+				<a href=""><img src="img/icon_fb_64.svg" alt="fb"></a>
+				<a href=""><img src="img/icon_ig_64.svg" alt="ig"></a>
+				<a href=""><img src="img/icon_video_64.svg" alt="video"></a>
+			</ul>
+		</div>		
+	</header>
+	<!-- header end -->
+
+
+	<!-- section:About關於我 -->
+	<section class="about" data-aos="fade-up">
+		<h2>About</h2>
+		<img src="img/photo_384.png" alt="" data-aos="flip-left">
+		<ul class="info">
+			<li><h3>Joanne Chen</h3></li>
+			<li><p>1997/10/10</p></li>
+			<li><p class="school">National Hex School Normal University <br>Department of Visual Design</p></li>
+		</ul>
+		<hr>
+		<ul class="experience">
+			<li><em></em>Founder of ‘’XXXD Official’’</li>
+			<li><em></em>Graphic Designer</li>
+			<li><em></em>Graphic Intern of Hex School</li>		
+		</ul>
+	</section>
+	<!-- section:About關於我end -->
+
+
+	<!-- section:mybrand我的品牌 -->
+	<section class="mybrand" data-aos="fade-up">
+		<h2>My Brand ‘’XXXD’’</h2>
+		<p>Just Keep XXXD Everyday</p>
+		<p class="brand-intro">2020 年創立的個人服飾品牌<br>引領叛逆少年開啟與社會對話的窗口<br>主打概念潮流T-Shirt</p>
+
+		<!-- flip-left(翻動效果) -->
+		<img src="img/mybrand_792_01.png" alt="" data-aos="flip-left">
+		<div>
+			<img src="img/mybrand_588_02.png" alt="" data-aos="flip-left">
+			<img src="img/mybrand_588_03.png" alt=""data-aos="flip-right">	
+		</div>		
+	</section>
+	<!-- section:mybrand我的品牌end -->
+
+
+	<!-- section:other works其他工作 -->
+	<section class="other_works" data-aos="fade-up">	
+		<h2>Other Works</h2>
+		<p>2016-2020 年累積的作品<br>海報/廣告/攝影/LOGO/3D</p>
+		<!-- 1 -->
+		<ul>
+			<li data-aos="zoom-in">
+				<img src="img/other_works_384_01.png" alt="">
+				<p>海報設計<em>/2017</em></p>
+			</li>
+			<li data-aos="zoom-in">
+				<img src="img/other_works_384_02.png" alt="">
+				<p>海報設計<em>/2018</em></p>
+			</li>
+			<li data-aos="zoom-in">
+				<img src="img/other_works_384_03.png" alt="">
+				<p>海報設計<em>/2018</em></p>
+			</li>
+		</ul>
+		<!-- 2 -->
+		<ul>
+			<li data-aos="zoom-in">
+				<img src="img/other_works_588_04.png" alt="">
+				<p>概念攝影<em>/2018</em></p>
+			</li>
+			<li data-aos="zoom-in">
+				<img src="img/other_works_588_05.png" alt="">
+				<p>概念攝影<em>/2018</em></p>
+			</li>
+		</ul>
+
+		<!-- 3 -->
+		<ul>
+			<li data-aos="zoom-in">
+				<img src="img/other_works_384_06.png" alt="">
+				<p>sasa 酒標設計<em>/2019</em></p>
+			</li>
+			<li data-aos="zoom-in">
+				<img src="img/other_works_384_07.png" alt="">
+				<p>攝影創作<em>/2018</em></p>
+			</li>
+			<li data-aos="zoom-in">
+				<img src="img/other_works_384_08.png" alt="">
+				<p>官網設計<em>/2020</em></p>
+			</li>
+		</ul>
+	</section>
+	<!-- section:other works其他工作end -->
+
+
+	<!-- footer:contact聯絡方式 -->
+	<footer>
+		<div data-aos="zoom-in">			
+			<h2>Contact</h2>
+			<ul>
+				<li>Mail：xxxd@hexschool.com</li>
+				<li>Phone Number：0910123456</li>
+			</ul>
+		</div>		
+	</footer>
+	<!-- footer end -->
+
+	<!-- AOS視差滾動效果 -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	 //AOS預設設定
+	 //AOS.init();
+
+	 // AOS全域設定(改變部分設定值)
+	AOS.init({
+	  // Global settings:
+	  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+	  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+	  initClassName: 'aos-init', // class applied after initialization
+	  animatedClassName: 'aos-animate', // class applied on animation
+	  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+	  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+	  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+	  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+	  
+
+	  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+	  offset: 120, // offset (in px) from the original trigger point
+	  delay: 0, // values from 0 to 3000, with step 50ms
+	  duration: 2000, // 動畫顯示時間：預設為400(0.4秒)。values from 0 to 3000, with step 50ms
+	  easing: 'ease', // default easing for AOS animations
+	  once: false, // 動畫顯示次數：true(僅顯示一次動畫)、false(重複出現動畫)。whether animation should happen only once - while scrolling down
+	  mirror: false, // whether elements should animate out while scrolling past them
+	  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+	});
+
+
+	</script>
+</body>
+</html>

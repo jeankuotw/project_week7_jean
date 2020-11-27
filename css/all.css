@@ -1,0 +1,318 @@
+/*css reset*/
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /*font-size: 100%;
+	font: inherit;*/
+  font-weight: normal;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*===RWD響應式網頁會設定的img css reset(Lesson7-41建議新增)===*/
+img {
+  /*圖片最大只會放大到原圖的100%*/
+  max-width: 100%;
+  /*自適應伸縮*/
+  height: auto; }
+
+/*css reset end*/
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  
+}
+
+body {
+  font-family: 'Roboto', sans-serif;  
+  background-color: #fff;
+  font-size: 14px; 
+}
+
+/* ==== 共用 ====*/
+h2{
+  font-size:64px;
+  font-style: italic;
+  font-weight: 500;
+}
+p{
+  font-size: 24px;
+  line-height: 36px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* ==== 共用end ====*/
+
+
+/* ==== header:main_img主視覺+聯絡 ==== */
+header{
+  /*圖片*/
+  max-width: 1920px; 
+  height:958px; 
+  position: relative;
+  /*文字*/
+  padding-top: 356px;
+  color:#fff;
+  /*水平置中*/
+  display:flex;
+  justify-content: center;    
+}
+header div{
+  position:absolute;
+}
+header div p{
+  line-height: 42px;
+}
+header div h1{
+  font-size: 80px;
+  line-height: 94px;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+header div h3{
+  font-size: 24px;
+  font-style: italic;
+  line-height: 36px;
+  font-weight: 500;
+  margin-bottom: 48px;
+}
+header a{
+  margin-right: 16px;
+}
+header a:last-child{
+  margin-right: 0;
+}
+header a img{
+  width: 60px; 
+  height: 60px;
+}
+
+/* ==== header end ==== */
+
+
+/* ==== section:About關於我 ====*/
+section.about{
+  margin: 0 auto;
+  text-align: center;
+  padding: 64px 0 56px 0;
+}
+.about h2{
+  margin-bottom: 40px;
+  line-height: 75px;
+}
+.about img{
+  margin-bottom: 24px;
+}
+.about li h3{
+  font-size: 24px;
+  line-height: 42px;
+  font-style: italic;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+.about li p{
+  line-height: 42px;
+  margin-bottom: 8px;
+  font-weight: 900;
+}
+.about li p.school{
+  line-height: 36px;
+  margin-bottom: 24px;
+}
+/*分隔線設定*/
+.about hr{
+  border-top: 1px solid #000;
+  width:384px;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+.about ul{}
+.about .experience li{
+  font-size:24px;
+  line-height: 42px;
+  font-weight: 900;
+  margin-bottom: 32px;
+  /*垂直、水平對齊*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .experience li:last-child{
+  margin-bottom: 0;
+}
+
+/*圓圈符號:用背景的方式製作*/
+.about li em{
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin-right: 16px;
+  background: #891818;
+  border-radius: 50px;
+}
+/* ==== section:About關於我 end ====*/
+
+
+/* ==== section:mybrand我的品牌 ====*/
+section.mybrand{
+  margin: 0 auto;
+  padding:64px 0 160px 0;
+  text-align: center;
+  background-color: #000;
+  color:#fff;
+}
+.mybrand h2{
+  line-height: 75px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.mybrand p{
+  line-height: 42px;
+  margin-bottom: 32px;
+}
+.mybrand p.brand-intro{  
+  font-size:20px;
+  line-height: 30px;
+  margin-bottom: 68px;
+  font-style: normal;
+}
+.mybrand>img{
+  margin-bottom: 40px;
+}
+.mybrand div{
+  display: flex;
+  justify-content: center;
+}
+.mybrand div img:first-child{
+  margin-right: 24px;
+}
+/* ==== section:mybrand我的品牌 end ====*/
+
+
+/* ==== section:other works其他工作 ====*/
+section.other_works{
+  margin: 0 auto;
+  padding:64px 0 160px 0;
+  text-align: center;
+}
+
+.other_works h2{
+  margin-bottom: 24px;
+  line-height: 75px;
+}
+.other_works>p{
+  font-size: 20px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: 900;
+  margin-bottom: 56px;
+}
+
+.other_works ul{
+  /*水平排列*/
+  display: flex;
+  justify-content: center;   
+  margin-bottom: 56px;
+}
+
+.other_works li{
+  margin-right: 24px;
+}
+.other_works li:last-child{
+  margin-right: 0;
+}
+.other_works li img{
+  margin-bottom: 16px;
+}
+.other_works li p{
+  font-size: 20px;
+  line-height: 42px;
+  font-style: normal;
+  font-weight: bolder;
+}
+/* ==== section:other works其他工作 end ====*/
+
+
+/* ==== footer:contact聯絡方式 ====*/
+footer{
+  padding: 64px 0 80px 0;
+  text-align:center;
+  background-color: #000;
+  color:#fff;
+}
+footer h2{
+  margin-bottom: 16px;
+  line-height: 75px;
+}
+
+footer li:first-child{
+  margin-bottom: 16px;
+}
+footer li{
+  font-size: 24px;
+  line-height: 36px;
+  font-style: italic;
+  font-weight: 500;
+}
+/* ==== footer:contact聯絡方式 end ====*/
+
+
+/*客製化AOS*/
+/*flip-left翻動效果*/
+/*<div*/
+    /*data-aos="flip-left"*/
+    /*data-aos-offset="200"*/
+    /*data-aos-delay="50"*/
+    /*data-aos-duration="1000"*/
+    /*data-aos-easing="ease-in-out"*/
+    /*data-aos-mirror="true"*/
+    /*data-aos-once="false"*/
+    /*data-aos-anchor-placement="top-center">*/
+/*</div>*/
